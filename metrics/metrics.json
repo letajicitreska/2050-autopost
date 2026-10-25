@@ -1,1 +1,34 @@
-{"snapshots": []}
+{
+  "snapshots": [
+    {
+      "at": "2026-10-25T18:48:43.435962+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 2,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 4,
+            "views": 15,
+            "likes": 2,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 3,
+            "ig_reels_avg_watch_time": 5435,
+            "ig_reels_video_view_total_time": 32613
+          },
+          "yt": {
+            "viewCount": "0",
+            "likeCount": "0",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        }
+      }
+    }
+  ]
+}
