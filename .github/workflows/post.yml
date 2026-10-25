@@ -1,0 +1,50 @@
+name: post-reels
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # každou hodinu; publikuje jen položky, kterým nastal čas
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Nic neodesílat (1 = ano)"
+        default: "0"
+      only_id:
+        description: "Publikovat jen položku s tímto id"
+        default: ""
+
+concurrency:
+  group: post-reels
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Publikovat
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          ONLY_ID: ${{ github.event.inputs.only_id }}
+        run: python scripts/post.py
+      - name: Uložit stav
+        run: |
+          git config user.name "2050-autopost"
+          git config user.email "autopost@users.noreply.github.com"
+          git add -A plan queue
+          if ! git diff --cached --quiet; then
+            git commit -m "autopost: stav publikace"
+            git pull --rebase origin main
+            git push
+          fi
