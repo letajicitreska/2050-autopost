@@ -1,6 +1,9 @@
 name: post-reels
 
 on:
+  push:
+    branches: [main]
+    paths: ["plan/schedule.json"]
   schedule:
     - cron: "7 * * * *"   # každou hodinu; publikuje jen položky, kterým nastal čas
   workflow_dispatch:
