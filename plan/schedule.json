@@ -26,7 +26,8 @@
         "#jihomoravskýkraj"
       ],
       "status": "approved",
-      "error": "IG container: 400 {\"error\":{\"message\":\"The parameter video_url is required\",\"type\":\"IGApiException\",\"code\":100,\"fbtrace_id\":\"ARoSYUvin0nqCJDYDLwZyvu\"}}"
+      "error": "YT token: 401 {\n  \"error\": \"invalid_client\",\n  \"error_description\": \"The OAuth client was not found.\"\n}",
+      "ig_media_id": "18118086682811807"
     }
   ]
 }
