@@ -28,19 +28,18 @@ def log(*a):
 
 
 # ---------- Instagram ----------
-def ig_publish(path, caption, token):
+def ig_publish(path, caption, token, cover_url=None):
     size = path.stat().st_size
-    r = requests.post(
-        f"{IG}/me/media",
-        data={
-            "media_type": "REELS",
-            "upload_type": "resumable",
-            "caption": caption,
-            "share_to_feed": "true",
-            "access_token": token,
-        },
-        timeout=60,
-    )
+    payload = {
+        "media_type": "REELS",
+        "upload_type": "resumable",
+        "caption": caption,
+        "share_to_feed": "true",
+        "access_token": token,
+    }
+    if cover_url:
+        payload["cover_url"] = cover_url
+    r = requests.post(f"{IG}/me/media", data=payload, timeout=60)
     if not r.ok:
         raise RuntimeError(f"IG container: {r.status_code} {r.text}")
     j = r.json()
@@ -128,6 +127,21 @@ def yt_upload(path, title, description, tags):
     return put.json()["id"]
 
 
+def yt_thumbnail(video_id, cover_path):
+    """Miniatura (JPEG/PNG do 2 MB). Selhání není kritické."""
+    token = yt_access_token()
+    ctype = "image/png" if cover_path.suffix.lower() == ".png" else "image/jpeg"
+    with open(cover_path, "rb") as f:
+        r = requests.post(
+            f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={video_id}",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": ctype},
+            data=f,
+            timeout=120,
+        )
+    if not r.ok:
+        raise RuntimeError(f"YT thumbnail: {r.status_code} {r.text[:200]}")
+
+
 # ---------- hlavní smyčka ----------
 def due(item, now):
     if item.get("status") != "approved":
@@ -159,7 +173,7 @@ def main():
                 if DRY:
                     log(f"[{it['id']}] DRY IG: {path.name}\n{caption}")
                 else:
-                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"])
+                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"], it.get("cover_url"))
                     log(f"[{it['id']}] IG OK {it['ig_media_id']}")
             if not it.get("yt_video_id"):
                 if DRY:
@@ -167,11 +181,20 @@ def main():
                 else:
                     it["yt_video_id"] = yt_upload(path, it["title_yt"], ytdesc, it.get("tags_yt", []))
                     log(f"[{it['id']}] YT OK {it['yt_video_id']}")
+                    cover = ROOT / "queue" / it["cover_file"] if it.get("cover_file") else None
+                    if cover and cover.exists():
+                        try:
+                            yt_thumbnail(it["yt_video_id"], cover)
+                            log(f"[{it['id']}] YT miniatura OK")
+                        except Exception as e:
+                            log(f"[{it['id']}] YT miniatura selhala: {e}")
             if not DRY and it.get("ig_media_id") and it.get("yt_video_id"):
                 it["status"] = "posted"
                 it["posted_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
                 it.pop("error", None)
                 path.unlink()
+                if it.get("cover_file") and (ROOT / "queue" / it["cover_file"]).exists():
+                    (ROOT / "queue" / it["cover_file"]).unlink()
         except Exception as e:  # nezastaví ostatní položky
             it["error"] = str(e)[:500]
             log(f"[{it['id']}] CHYBA: {e}")
