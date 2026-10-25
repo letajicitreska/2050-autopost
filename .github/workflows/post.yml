@@ -38,6 +38,7 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          PUBLIC_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           ONLY_ID: ${{ github.event.inputs.only_id }}
         run: python scripts/post.py

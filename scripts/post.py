@@ -29,30 +29,36 @@ def log(*a):
 
 # ---------- Instagram ----------
 def ig_publish(path, caption, token, cover_url=None):
-    size = path.stat().st_size
+    """Instagram Login API bere video z veřejné URL (video_url). Pokud není PUBLIC_BASE, zkusí resumable upload."""
+    base = os.environ.get("PUBLIC_BASE", "").rstrip("/")
     payload = {
         "media_type": "REELS",
-        "upload_type": "resumable",
         "caption": caption,
         "share_to_feed": "true",
         "access_token": token,
     }
+    if base:
+        payload["video_url"] = f"{base}/queue/{path.name}"
+    else:
+        payload["upload_type"] = "resumable"
     if cover_url:
         payload["cover_url"] = cover_url
     r = requests.post(f"{IG}/me/media", data=payload, timeout=60)
     if not r.ok:
         raise RuntimeError(f"IG container: {r.status_code} {r.text}")
     j = r.json()
-    cid, uri = j["id"], j["uri"]
-    with open(path, "rb") as f:
-        u = requests.post(
-            uri,
-            headers={"Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)},
-            data=f,
-            timeout=1800,
-        )
-    if not u.ok:
-        raise RuntimeError(f"IG upload: {u.status_code} {u.text}")
+    cid = j["id"]
+    if not base:
+        size = path.stat().st_size
+        with open(path, "rb") as f:
+            u = requests.post(
+                j["uri"],
+                headers={"Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size)},
+                data=f,
+                timeout=1800,
+            )
+        if not u.ok:
+            raise RuntimeError(f"IG upload: {u.status_code} {u.text}")
     for _ in range(90):
         s = requests.get(
             f"{IG}/{cid}",
@@ -173,7 +179,8 @@ def main():
                 if DRY:
                     log(f"[{it['id']}] DRY IG: {path.name}\n{caption}")
                 else:
-                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"], it.get("cover_url"))
+                    cover_url = it.get("cover_url") or (f"{os.environ['PUBLIC_BASE'].rstrip('/')}/queue/{it['cover_file']}" if os.environ.get("PUBLIC_BASE") and it.get("cover_file") else None)
+                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"], cover_url)
                     log(f"[{it['id']}] IG OK {it['ig_media_id']}")
             if not it.get("yt_video_id"):
                 if DRY:
