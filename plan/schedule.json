@@ -133,6 +133,32 @@
         "#krajina"
       ],
       "status": "approved"
+    },
+    {
+      "id": "117-0-promo",
+      "episode": 117,
+      "file": "117_0_promo.mp4",
+      "cover_file": "117_0_promo_cover.jpg",
+      "publish_at": "2026-10-26T16:00:00+00:00",
+      "caption_ig": "Nová epizoda je venku: Emisní povolenky a průmysl.\n\nO emisních povolenkách (ETS) se dnes mluví hlavně jako o brzdě průmyslu. S Kateřinou Kolouch Grabovskou a Ondrášem Přibylou z Faktů o klimatu se v nové epizodě vracíme k tomu, jaký je jejich záměr a smysl. Bavíme se i o tom, proč je některé státy chtějí brzdit a proč trh transformaci sám nezařídí. Celá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+      "title_yt": "Emisní povolenky a průmysl | Nová epizoda | Podcast 2050",
+      "desc_yt": "Kateřina Kolouch Grabovská a Ondráš Přibyla z Faktů o klimatu o emisních povolenkách (ETS) a průmyslu: jaký mají záměr, proč je některé státy brzdí a proč trh transformaci sám nezařídí. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+      "tags_yt": [
+        "emisní povolenky",
+        "ETS",
+        "průmysl",
+        "Faktů o klimatu",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#emisnípovolenky",
+        "#ETS",
+        "#průmysl",
+        "#dekarbonizace",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
     }
   ]
 }
