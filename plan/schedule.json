@@ -81,6 +81,58 @@
         "#dezinformace"
       ],
       "status": "approved"
+    },
+    {
+      "id": "112-1-proc-uhlikove-clo",
+      "episode": 112,
+      "file": "112_1_proc-uhlikove-clo.mp4",
+      "cover_file": "112_1_proc-uhlikove-clo_cover.jpg",
+      "publish_at": "2026-11-03T18:00:00+00:00",
+      "caption_ig": "V Evropské unii se už dvě dekády platí za každou tunu emisí, jinde ve světě často ne.\n\nUhlíkové clo na hranicích EU (CBAM) má tuhle nerovnost srovnat: dovozci oceli, cementu, hliníku, hnojiv nebo elektřiny budou za emise ve svých výrobcích doplácet certifikáty v ceně emisní povolenky. S Kateřinou Kolouchovou z Fakt o klimatu jsme probrali, jak to funguje i kde má opatření slabá místa. Celá epizoda 112 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+      "title_yt": "Proč má EU uhlíkové clo? | Kateřina Kolouchová | Podcast 2050",
+      "desc_yt": "V EU se už dvě dekády platí za každou tunu emisí. Kateřina Kolouchová o uhlíkovém clu CBAM a o tom, jak má srovnat podmínky pro evropský průmysl. Celá epizoda: https://2050podcast.cz/epizody/112 #Shorts",
+      "tags_yt": [
+        "CBAM",
+        "uhlíkové clo",
+        "emisní povolenky",
+        "Kateřina Kolouchová",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#CBAM",
+        "#uhlíkovéclo",
+        "#emisnípovolenky",
+        "#evropskáunie",
+        "#dekarbonizace"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "77-3-hosti",
+      "episode": 77,
+      "file": "77_3_hosti.mp4",
+      "cover_file": "77_3_hosti_cover.jpg",
+      "publish_at": "2026-11-06T18:00:00+00:00",
+      "caption_ig": "Vykopal jsem noru pro ledňáčka a on se nastěhoval.\n\nProkop Pithart vypráví, jaká radost je dělat pro přírodu malé věci: skopnout břeh, měsíc nato uvidět, jak si v něm ledňáček hrabe hnízdní noru. Přirovnává to k dobrému hostiteli, který se cítí dobře, když jeho hosté odejdou spokojení, jen tady jsou hosté zvířata. Celá epizoda 77 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+      "title_yt": "Vykopal jsem noru pro ledňáčka | Prokop Pithart | Podcast 2050",
+      "desc_yt": "Prokop Pithart o radosti z malých věcí v přírodě: z hnízdní nory pro ledňáčka a z hostů, kteří se u člověka cítí dobře. Celá epizoda: https://2050podcast.cz/epizody/77 #Shorts",
+      "tags_yt": [
+        "ledňáček",
+        "příroda",
+        "biodiverzita",
+        "Prokop Pithart",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#prokoppithart",
+        "#příroda",
+        "#ledňáček",
+        "#biodiverzita",
+        "#krajina"
+      ],
+      "status": "approved"
     }
   ]
 }
