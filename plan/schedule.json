@@ -29,6 +29,58 @@
       "ig_media_id": "18118086682811807",
       "yt_video_id": "MB1KuD7mWtc",
       "posted_at": "2026-10-25T18:34:56.185676+00:00"
+    },
+    {
+      "id": "114-1-osm-bomb",
+      "episode": 114,
+      "file": "114_1_osm-bomb.mp4",
+      "cover_file": "114_1_osm-bomb_cover.jpg",
+      "publish_at": "2026-10-28T18:00:00+00:00",
+      "caption_ig": "Tepelná nerovnováha Země dnes odpovídá osmi hirošimským bombám každou sekundu. James Hansen ji kdysi přepočítal na čtyři, takže číslo se za pár let zdvojnásobilo.\n\nS Petrem Danišem, hlavním autorem Atlasu klimatické změny, jsme prošli, co se v datech za posledních pět let pohnulo. Celá epizoda 114 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+      "title_yt": "8 hirošimských bomb každou sekundu | Petr Daniš | Podcast 2050",
+      "desc_yt": "Tepelná nerovnováha Země odpovídá osmi hirošimským bombám za sekundu. Dřív to byly čtyři. Rozhovor s Petrem Danišem o datech v Atlasu klimatické změny. Celá epizoda: https://2050podcast.cz/epizody/114 #Shorts",
+      "tags_yt": [
+        "klimatická změna",
+        "atlas klimatické změny",
+        "tepelná nerovnováha",
+        "Petr Daniš",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#atlasklimatickezmeny",
+        "#klima",
+        "#klimatickazmena",
+        "#data",
+        "#oteplovani"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "113-6-tridit-plasty",
+      "episode": 113,
+      "file": "113_6_tridit-plasty.mp4",
+      "cover_file": "113_6_tridit-plasty_cover.jpg",
+      "publish_at": "2026-10-31T18:00:00+00:00",
+      "caption_ig": "Většina Čechů řekne, že klimatickou změnu vyřeší třídění plastů a sázení stromů.\n\nS Danem Kortusem jsme v živém dílu v brněnském CO.LABS parku mluvili o tom, jak dnes vůbec mluvit o klimatu, aby lidi neodradilo hned první věta. Proč je slovo Green Deal pro spoustu lidí červený hadr a proč strašení zabírá nanejvýš v nejhorším vedru. Celá epizoda 113 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+      "title_yt": "Vyřeší klima třídění plastů? | Dan Kortus | Podcast 2050",
+      "desc_yt": "Většina Čechů věří, že klima vyřeší třídění plastů a sázení stromů. Dan Kortus o tom, jak o klimatu mluvit, aby to lidi neodradilo. Celá epizoda: https://2050podcast.cz/epizody/113 #Shorts",
+      "tags_yt": [
+        "klimatická změna",
+        "komunikace klimatu",
+        "Dan Kortus",
+        "Green Deal",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#komunikaceklimatu",
+        "#dankortus",
+        "#greendeal",
+        "#klima",
+        "#dezinformace"
+      ],
+      "status": "approved"
     }
   ]
 }

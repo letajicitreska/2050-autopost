@@ -6,3 +6,4 @@
 3. Popisky jen z epizody (summary, úvod, přepis) a z citátu na coveru, ne z lokálních skriptů.
 4. Cover si prohlédni (device_stage_files + Read). Bez coveru epizodu nevybírej.
 5. Návrh ukaž v chatu, nahrávej až po „schvaluju“.
+6. Použité reely se neopakují: jakmile je reel zařazen do fronty, přesuň ho (mv, ne mazání) na Macu z 'reels na instagram' do podsložky 'reels na instagram/_pouzito/' i s coverem. Při výběru vynech vše, co je v schedule.json (jakýkoli status) nebo v _pouzito.
