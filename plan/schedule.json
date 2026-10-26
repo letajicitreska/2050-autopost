@@ -1,167 +1,295 @@
 {
-  "items": [
-    {
-      "id": "116-1-moderni-technika",
-      "episode": 116,
-      "file": "116_1_moderni-technika.mp4",
-      "cover_file": "116_1_moderni-technika_cover.jpg",
-      "publish_at": "2026-10-25T18:00:00+00:00",
-      "caption_ig": "Kulturní dům s novým tepelným čerpadlem, vzduchotechnikou a solárními panely na střeše. A přitom bez zateplení a se starými okny, „doslova děravej“. Tomáš Stav z Jihomoravského kraje vypráví, jak se to stane: starosta zadal projekt firmě, která dělá technologie, a obálka budovy z projektu úplně vypadla.\n\nKraj spravuje kolem dvou tisíc budov a chce během 26 let zrenovovat stovky těch nejnáročnějších. Celá epizoda 116 o renovaci veřejných budov je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "Kulturní dům s tepelným čerpadlem, ale bez zateplení | Tomáš Stav | Podcast 2050",
-      "desc_yt": "Tomáš Stav z Jihomoravského kraje o kulturním domě s tepelným čerpadlem a solárními panely, který zůstal bez zateplení a s původními okny. Jak se to stane a jak tomu předejít? Celá epizoda 116, Renovace veřejných budov v praxi: https://2050podcast.cz/epizody/116 #Shorts",
-      "tags_yt": [
-        "podcast 2050",
-        "renovace budov",
-        "energetika",
-        "dekarbonizace",
-        "zateplení",
-        "Jihomoravský kraj"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#renovace",
-        "#energetika",
-        "#dekarbonizace",
-        "#zateplení",
-        "#jihomoravskýkraj"
-      ],
-      "status": "posted",
-      "ig_media_id": "18118086682811807",
-      "yt_video_id": "MB1KuD7mWtc",
-      "posted_at": "2026-10-25T18:34:56.185676+00:00"
-    },
-    {
-      "id": "114-1-osm-bomb",
-      "episode": 114,
-      "file": "114_1_osm-bomb.mp4",
-      "cover_file": "114_1_osm-bomb_cover.jpg",
-      "publish_at": "2026-10-28T18:00:00+00:00",
-      "caption_ig": "Tepelná nerovnováha Země dnes odpovídá osmi hirošimským bombám každou sekundu. James Hansen ji kdysi přepočítal na čtyři, takže číslo se za pár let zdvojnásobilo.\n\nS Petrem Danišem, hlavním autorem Atlasu klimatické změny, jsme prošli, co se v datech za posledních pět let pohnulo. Celá epizoda 114 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "8 hirošimských bomb každou sekundu | Petr Daniš | Podcast 2050",
-      "desc_yt": "Tepelná nerovnováha Země odpovídá osmi hirošimským bombám za sekundu. Dřív to byly čtyři. Rozhovor s Petrem Danišem o datech v Atlasu klimatické změny. Celá epizoda: https://2050podcast.cz/epizody/114 #Shorts",
-      "tags_yt": [
-        "klimatická změna",
-        "atlas klimatické změny",
-        "tepelná nerovnováha",
-        "Petr Daniš",
-        "podcast 2050"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#atlasklimatickezmeny",
-        "#klima",
-        "#klimatickazmena",
-        "#data",
-        "#oteplovani"
-      ],
-      "status": "approved"
-    },
-    {
-      "id": "113-6-tridit-plasty",
-      "episode": 113,
-      "file": "113_6_tridit-plasty.mp4",
-      "cover_file": "113_6_tridit-plasty_cover.jpg",
-      "publish_at": "2026-10-31T18:00:00+00:00",
-      "caption_ig": "Většina Čechů řekne, že klimatickou změnu vyřeší třídění plastů a sázení stromů.\n\nS Danem Kortusem jsme v živém dílu v brněnském CO.LABS parku mluvili o tom, jak dnes vůbec mluvit o klimatu, aby lidi neodradilo hned první věta. Proč je slovo Green Deal pro spoustu lidí červený hadr a proč strašení zabírá nanejvýš v nejhorším vedru. Celá epizoda 113 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "Vyřeší klima třídění plastů? | Dan Kortus | Podcast 2050",
-      "desc_yt": "Většina Čechů věří, že klima vyřeší třídění plastů a sázení stromů. Dan Kortus o tom, jak o klimatu mluvit, aby to lidi neodradilo. Celá epizoda: https://2050podcast.cz/epizody/113 #Shorts",
-      "tags_yt": [
-        "klimatická změna",
-        "komunikace klimatu",
-        "Dan Kortus",
-        "Green Deal",
-        "podcast 2050"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#komunikaceklimatu",
-        "#dankortus",
-        "#greendeal",
-        "#klima",
-        "#dezinformace"
-      ],
-      "status": "approved"
-    },
-    {
-      "id": "112-1-proc-uhlikove-clo",
-      "episode": 112,
-      "file": "112_1_proc-uhlikove-clo.mp4",
-      "cover_file": "112_1_proc-uhlikove-clo_cover.jpg",
-      "publish_at": "2026-11-03T18:00:00+00:00",
-      "caption_ig": "V Evropské unii se už dvě dekády platí za každou tunu emisí, jinde ve světě často ne.\n\nUhlíkové clo na hranicích EU (CBAM) má tuhle nerovnost srovnat: dovozci oceli, cementu, hliníku, hnojiv nebo elektřiny budou za emise ve svých výrobcích doplácet certifikáty v ceně emisní povolenky. S Kateřinou Kolouchovou z Fakt o klimatu jsme probrali, jak to funguje i kde má opatření slabá místa. Celá epizoda 112 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "Proč má EU uhlíkové clo? | Kateřina Kolouchová | Podcast 2050",
-      "desc_yt": "V EU se už dvě dekády platí za každou tunu emisí. Kateřina Kolouchová o uhlíkovém clu CBAM a o tom, jak má srovnat podmínky pro evropský průmysl. Celá epizoda: https://2050podcast.cz/epizody/112 #Shorts",
-      "tags_yt": [
-        "CBAM",
-        "uhlíkové clo",
-        "emisní povolenky",
-        "Kateřina Kolouchová",
-        "podcast 2050"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#CBAM",
-        "#uhlíkovéclo",
-        "#emisnípovolenky",
-        "#evropskáunie",
-        "#dekarbonizace"
-      ],
-      "status": "approved"
-    },
-    {
-      "id": "77-3-hosti",
-      "episode": 77,
-      "file": "77_3_hosti.mp4",
-      "cover_file": "77_3_hosti_cover.jpg",
-      "publish_at": "2026-11-06T18:00:00+00:00",
-      "caption_ig": "Vykopal jsem noru pro ledňáčka a on se nastěhoval.\n\nProkop Pithart vypráví, jaká radost je dělat pro přírodu malé věci: skopnout břeh, měsíc nato uvidět, jak si v něm ledňáček hrabe hnízdní noru. Přirovnává to k dobrému hostiteli, který se cítí dobře, když jeho hosté odejdou spokojení, jen tady jsou hosté zvířata. Celá epizoda 77 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "Vykopal jsem noru pro ledňáčka | Prokop Pithart | Podcast 2050",
-      "desc_yt": "Prokop Pithart o radosti z malých věcí v přírodě: z hnízdní nory pro ledňáčka a z hostů, kteří se u člověka cítí dobře. Celá epizoda: https://2050podcast.cz/epizody/77 #Shorts",
-      "tags_yt": [
-        "ledňáček",
-        "příroda",
-        "biodiverzita",
-        "Prokop Pithart",
-        "podcast 2050"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#prokoppithart",
-        "#příroda",
-        "#ledňáček",
-        "#biodiverzita",
-        "#krajina"
-      ],
-      "status": "approved"
-    },
-    {
-      "id": "117-0-promo",
-      "episode": 117,
-      "file": "117_0_promo.mp4",
-      "cover_file": "117_0_promo_cover.jpg",
-      "publish_at": "2026-10-26T16:00:00+00:00",
-      "caption_ig": "Nová epizoda je venku: Emisní povolenky a průmysl.\n\nO emisních povolenkách (ETS) se dnes mluví hlavně jako o brzdě průmyslu. S Kateřinou Kolouch Grabovskou a Ondrášem Přibylou z Faktů o klimatu se v nové epizodě vracíme k tomu, jaký je jejich záměr a smysl. Bavíme se i o tom, proč je některé státy chtějí brzdit a proč trh transformaci sám nezařídí. Celá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
-      "title_yt": "Emisní povolenky a průmysl | Nová epizoda | Podcast 2050",
-      "desc_yt": "Kateřina Kolouch Grabovská a Ondráš Přibyla z Faktů o klimatu o emisních povolenkách (ETS) a průmyslu: jaký mají záměr, proč je některé státy brzdí a proč trh transformaci sám nezařídí. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
-      "tags_yt": [
-        "emisní povolenky",
-        "ETS",
-        "průmysl",
-        "Faktů o klimatu",
-        "podcast 2050"
-      ],
-      "hashtags": [
-        "#podcast2050",
-        "#emisnípovolenky",
-        "#ETS",
-        "#průmysl",
-        "#dekarbonizace",
-        "#faktaoklimatu"
-      ],
-      "status": "posted",
-      "ig_media_id": "17890523313685844",
-      "yt_video_id": "bH8PKoyShdY",
-      "posted_at": "2026-10-26T16:08:01.306014+00:00"
-    }
-  ]
+ "items": [
+  {
+   "id": "116-1-moderni-technika",
+   "episode": 116,
+   "file": "116_1_moderni-technika.mp4",
+   "cover_file": "116_1_moderni-technika_cover.jpg",
+   "publish_at": "2026-10-25T18:00:00+00:00",
+   "caption_ig": "Kulturní dům s novým tepelným čerpadlem, vzduchotechnikou a solárními panely na střeše. A přitom bez zateplení a se starými okny, „doslova děravej“. Tomáš Stav z Jihomoravského kraje vypráví, jak se to stane: starosta zadal projekt firmě, která dělá technologie, a obálka budovy z projektu úplně vypadla.\n\nKraj spravuje kolem dvou tisíc budov a chce během 26 let zrenovovat stovky těch nejnáročnějších. Celá epizoda 116 o renovaci veřejných budov je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Kulturní dům s tepelným čerpadlem, ale bez zateplení | Tomáš Stav | Podcast 2050",
+   "desc_yt": "Tomáš Stav z Jihomoravského kraje o kulturním domě s tepelným čerpadlem a solárními panely, který zůstal bez zateplení a s původními okny. Jak se to stane a jak tomu předejít? Celá epizoda 116, Renovace veřejných budov v praxi: https://2050podcast.cz/epizody/116 #Shorts",
+   "tags_yt": [
+    "podcast 2050",
+    "renovace budov",
+    "energetika",
+    "dekarbonizace",
+    "zateplení",
+    "Jihomoravský kraj"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#renovace",
+    "#energetika",
+    "#dekarbonizace",
+    "#zateplení",
+    "#jihomoravskýkraj"
+   ],
+   "status": "posted",
+   "ig_media_id": "18118086682811807",
+   "yt_video_id": "MB1KuD7mWtc",
+   "posted_at": "2026-10-25T18:34:56.185676+00:00"
+  },
+  {
+   "id": "114-1-osm-bomb",
+   "episode": 114,
+   "file": "114_1_osm-bomb.mp4",
+   "cover_file": "114_1_osm-bomb_cover.jpg",
+   "publish_at": "2026-10-28T18:00:00+00:00",
+   "caption_ig": "Tepelná nerovnováha Země dnes odpovídá osmi hirošimským bombám každou sekundu. James Hansen ji kdysi přepočítal na čtyři, takže číslo se za pár let zdvojnásobilo.\n\nS Petrem Danišem, hlavním autorem Atlasu klimatické změny, jsme prošli, co se v datech za posledních pět let pohnulo. Celá epizoda 114 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "8 hirošimských bomb každou sekundu | Petr Daniš | Podcast 2050",
+   "desc_yt": "Tepelná nerovnováha Země odpovídá osmi hirošimským bombám za sekundu. Dřív to byly čtyři. Rozhovor s Petrem Danišem o datech v Atlasu klimatické změny. Celá epizoda: https://2050podcast.cz/epizody/114 #Shorts",
+   "tags_yt": [
+    "klimatická změna",
+    "atlas klimatické změny",
+    "tepelná nerovnováha",
+    "Petr Daniš",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#atlasklimatickezmeny",
+    "#klima",
+    "#klimatickazmena",
+    "#data",
+    "#oteplovani"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "113-6-tridit-plasty",
+   "episode": 113,
+   "file": "113_6_tridit-plasty.mp4",
+   "cover_file": "113_6_tridit-plasty_cover.jpg",
+   "publish_at": "2026-10-31T18:00:00+00:00",
+   "caption_ig": "Většina Čechů řekne, že klimatickou změnu vyřeší třídění plastů a sázení stromů.\n\nS Danem Kortusem jsme v živém dílu v brněnském CO.LABS parku mluvili o tom, jak dnes vůbec mluvit o klimatu, aby lidi neodradilo hned první věta. Proč je slovo Green Deal pro spoustu lidí červený hadr a proč strašení zabírá nanejvýš v nejhorším vedru. Celá epizoda 113 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Vyřeší klima třídění plastů? | Dan Kortus | Podcast 2050",
+   "desc_yt": "Většina Čechů věří, že klima vyřeší třídění plastů a sázení stromů. Dan Kortus o tom, jak o klimatu mluvit, aby to lidi neodradilo. Celá epizoda: https://2050podcast.cz/epizody/113 #Shorts",
+   "tags_yt": [
+    "klimatická změna",
+    "komunikace klimatu",
+    "Dan Kortus",
+    "Green Deal",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#komunikaceklimatu",
+    "#dankortus",
+    "#greendeal",
+    "#klima",
+    "#dezinformace"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "112-1-proc-uhlikove-clo",
+   "episode": 112,
+   "file": "112_1_proc-uhlikove-clo.mp4",
+   "cover_file": "112_1_proc-uhlikove-clo_cover.jpg",
+   "publish_at": "2026-11-03T18:00:00+00:00",
+   "caption_ig": "V Evropské unii se už dvě dekády platí za každou tunu emisí, jinde ve světě často ne.\n\nUhlíkové clo na hranicích EU (CBAM) má tuhle nerovnost srovnat: dovozci oceli, cementu, hliníku, hnojiv nebo elektřiny budou za emise ve svých výrobcích doplácet certifikáty v ceně emisní povolenky. S Kateřinou Kolouchovou z Fakt o klimatu jsme probrali, jak to funguje i kde má opatření slabá místa. Celá epizoda 112 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Proč má EU uhlíkové clo? | Kateřina Kolouchová | Podcast 2050",
+   "desc_yt": "V EU se už dvě dekády platí za každou tunu emisí. Kateřina Kolouchová o uhlíkovém clu CBAM a o tom, jak má srovnat podmínky pro evropský průmysl. Celá epizoda: https://2050podcast.cz/epizody/112 #Shorts",
+   "tags_yt": [
+    "CBAM",
+    "uhlíkové clo",
+    "emisní povolenky",
+    "Kateřina Kolouchová",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#CBAM",
+    "#uhlíkovéclo",
+    "#emisnípovolenky",
+    "#evropskáunie",
+    "#dekarbonizace"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "77-3-hosti",
+   "episode": 77,
+   "file": "77_3_hosti.mp4",
+   "cover_file": "77_3_hosti_cover.jpg",
+   "publish_at": "2026-11-06T18:00:00+00:00",
+   "caption_ig": "Vykopal jsem noru pro ledňáčka a on se nastěhoval.\n\nProkop Pithart vypráví, jaká radost je dělat pro přírodu malé věci: skopnout břeh, měsíc nato uvidět, jak si v něm ledňáček hrabe hnízdní noru. Přirovnává to k dobrému hostiteli, který se cítí dobře, když jeho hosté odejdou spokojení, jen tady jsou hosté zvířata. Celá epizoda 77 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Vykopal jsem noru pro ledňáčka | Prokop Pithart | Podcast 2050",
+   "desc_yt": "Prokop Pithart o radosti z malých věcí v přírodě: z hnízdní nory pro ledňáčka a z hostů, kteří se u člověka cítí dobře. Celá epizoda: https://2050podcast.cz/epizody/77 #Shorts",
+   "tags_yt": [
+    "ledňáček",
+    "příroda",
+    "biodiverzita",
+    "Prokop Pithart",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#prokoppithart",
+    "#příroda",
+    "#ledňáček",
+    "#biodiverzita",
+    "#krajina"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "117-0-promo",
+   "episode": 117,
+   "file": "117_0_promo.mp4",
+   "cover_file": "117_0_promo_cover.jpg",
+   "publish_at": "2026-10-26T16:00:00+00:00",
+   "caption_ig": "Nová epizoda je venku: Emisní povolenky a průmysl.\n\nO emisních povolenkách (ETS) se dnes mluví hlavně jako o brzdě průmyslu. S Kateřinou Kolouch Grabovskou a Ondrášem Přibylou z Faktů o klimatu se v nové epizodě vracíme k tomu, jaký je jejich záměr a smysl. Bavíme se i o tom, proč je některé státy chtějí brzdit a proč trh transformaci sám nezařídí. Celá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Emisní povolenky a průmysl | Nová epizoda | Podcast 2050",
+   "desc_yt": "Kateřina Kolouch Grabovská a Ondráš Přibyla z Faktů o klimatu o emisních povolenkách (ETS) a průmyslu: jaký mají záměr, proč je některé státy brzdí a proč trh transformaci sám nezařídí. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "ETS",
+    "průmysl",
+    "Faktů o klimatu",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#ETS",
+    "#průmysl",
+    "#dekarbonizace",
+    "#faktaoklimatu"
+   ],
+   "status": "posted",
+   "ig_media_id": "17890523313685844",
+   "yt_video_id": "bH8PKoyShdY",
+   "posted_at": "2026-10-26T16:08:01.306014+00:00"
+  },
+  {
+   "id": "117-1-obetni-beranek",
+   "episode": 117,
+   "file": "117_1_obetni-beranek.mp4",
+   "cover_file": "117_1_obetni-beranek_cover.jpg",
+   "publish_at": "2026-11-09T18:00:00+00:00",
+   "caption_ig": "ETS je hrozně dobrý obětní beránek.\n\nNa emisní povolenky se dá svést cokoli, protože je těžké je bránit: za nimi nestojí odboráři, průmysl ani rodiny, jen naše vnoučata, která politický hlas nemají. Ondráš Přibyla z Faktů o klimatu v epizodě říká, proč průmysl z Evropy odchází ze spousty jiných důvodů, od národních politik po platy v Německu.\n\nCelá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "ETS je obětní beránek | Ondráš Přibyla | Podcast 2050",
+   "desc_yt": "Ondráš Přibyla z Faktů o klimatu: na emisní povolenky se dá svést cokoli, protože je těžké je bránit. Proč průmysl z Evropy odchází ze spousty jiných důvodů. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "ETS",
+    "Ondráš Přibyla",
+    "průmysl",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#ETS",
+    "#průmysl",
+    "#faktaoklimatu"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "117-4-proc-brzdi-ets",
+   "episode": 117,
+   "file": "117_4_proc-brzdi-ets.mp4",
+   "cover_file": "117_4_proc-brzdi-ets_cover.jpg",
+   "publish_at": "2026-11-18T18:00:00+00:00",
+   "caption_ig": "Místo omezení ETS bychom se mohli bavit o tom, jak podpořit transformaci.\n\nKateřina Kolouch Grabovská vysvětluje, proč se Itálie, Česko a Polsko snaží vliv povolenky omezit: Itálie je závislá na elektřině z plynu, Česko a Polsko pořád využívají uhlí a cena povolenky se tam víc projevuje v ceně elektřiny. A co by šlo dělat místo toho: investovat do nízkoemisních zdrojů a úspor a podpořit domácnosti, aby mohly dekarbonizovat.\n\nCelá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Proč některé státy brzdí ETS | Kateřina Kolouch Grabovská | Podcast 2050",
+   "desc_yt": "Kateřina Kolouch Grabovská o tom, proč Itálie, Česko a Polsko chtějí omezit vliv emisních povolenek, a co by se dalo dělat místo toho. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "ETS",
+    "Kateřina Kolouch Grabovská",
+    "uhlí",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#ETS",
+    "#energetika",
+    "#dekarbonizace",
+    "#faktaoklimatu"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "117-2-cina-a-evropa",
+   "episode": 117,
+   "file": "117_2_cina-a-evropa.mp4",
+   "cover_file": "117_2_cina-a-evropa_cover.jpg",
+   "publish_at": "2026-11-27T18:00:00+00:00",
+   "caption_ig": "Když je Čína autoritářský systém, tak prostě zavelí a jede se. Když je Evropa demokratický systém, tak se domluví na tržním mechanismu.\n\nOndráš Přibyla z Faktů o klimatu o tom, proč Evropa a Čína začaly s velkou hospodářskou transformací a proč emisní povolenky nejsou jen „zpoplatnění“, ale způsob, jak získat peníze na modernizaci a přimět rozhodovat se podniky, které emise vytvářejí.\n\nCelá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Čína zavelí, Evropa se domlouvá | Ondráš Přibyla | Podcast 2050",
+   "desc_yt": "Ondráš Přibyla z Faktů o klimatu o tom, jak se liší transformace v Číně a v Evropě a k čemu jsou emisní povolenky. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "ETS",
+    "Čína",
+    "Evropa",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#čína",
+    "#evropa",
+    "#dekarbonizace",
+    "#faktaoklimatu"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "117-5-trh-to-nezaridi",
+   "episode": 117,
+   "file": "117_5_trh-to-nezaridi.mp4",
+   "cover_file": "117_5_trh-to-nezaridi_cover.jpg",
+   "publish_at": "2026-12-06T18:00:00+00:00",
+   "caption_ig": "Ten trh to sám o sobě nezařídí.\n\nKateřina Kolouch Grabovská o tom, proč politika musí trh tvarovat. Kromě zisku tu je veřejný zájem: aby domácnosti měly teplo za dobrou cenu a abychom méně pociťovali dopady změny klimatu. Emisní povolenky jsou jeden z nástrojů, jak vytvořit prostředí, v němž se změny můžou dít.\n\nCelá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Trh to sám nezařídí | Kateřina Kolouch Grabovská | Podcast 2050",
+   "desc_yt": "Kateřina Kolouch Grabovská o tom, proč politika musí tvarovat trh a jakou roli v tom mají emisní povolenky. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "trh",
+    "politika",
+    "Kateřina Kolouch Grabovská",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#trh",
+    "#klimatickápolitika",
+    "#faktaoklimatu"
+   ],
+   "status": "approved"
+  },
+  {
+   "id": "117-3-podnik-zavre",
+   "episode": 117,
+   "file": "117_3_podnik-zavre.mp4",
+   "cover_file": "117_3_podnik-zavre_cover.jpg",
+   "publish_at": "2026-12-15T18:00:00+00:00",
+   "caption_ig": "Podnik má třetí možnost: zavřít.\n\nMůže investovat do proměny, platit povolenku, nebo skončit. Ondráš Přibyla na příkladu kladenské teplárny, která jede na hnědé uhlí a jejíž majitel její proměnu neplánuje, ukazuje, kde trh narazí na své limity: teplárna nemá konkurenci, takže když zavře, nikdo ji nestihne nahradit.\n\nCelá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích, odkaz v biu.",
+   "title_yt": "Podnik má třetí možnost: zavřít | Ondráš Přibyla | Podcast 2050",
+   "desc_yt": "Ondráš Přibyla na příkladu kladenské teplárny o tom, kde emisní povolenky narážejí na limity trhu. Celá epizoda: https://2050podcast.cz/epizody/117 #Shorts",
+   "tags_yt": [
+    "emisní povolenky",
+    "teplárna",
+    "Kladno",
+    "Ondráš Přibyla",
+    "podcast 2050"
+   ],
+   "hashtags": [
+    "#podcast2050",
+    "#emisnípovolenky",
+    "#teplárna",
+    "#uhlí",
+    "#průmysl",
+    "#faktaoklimatu"
+   ],
+   "status": "approved"
+  }
+ ]
 }
