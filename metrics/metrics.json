@@ -29,6 +29,36 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-10-26T11:30:18.390597+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 8,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 724,
+            "views": 782,
+            "likes": 8,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 10,
+            "ig_reels_avg_watch_time": 16809,
+            "ig_reels_video_view_total_time": 12186895
+          },
+          "yt": {
+            "viewCount": "41",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        }
+      }
     }
   ]
 }
