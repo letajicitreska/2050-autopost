@@ -114,6 +114,61 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-10-28T11:36:38.079586+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 9,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 900,
+            "views": 990,
+            "likes": 9,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 11,
+            "ig_reels_avg_watch_time": 17032,
+            "ig_reels_video_view_total_time": 15738411
+          },
+          "yt": {
+            "viewCount": "60",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "117-0-promo": {
+          "ig": {
+            "like_count": 15,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De9rHRCATvp/",
+            "timestamp": "2026-10-26T16:07:43+0000",
+            "id": "17890523313685844",
+            "reach": 387,
+            "views": 490,
+            "likes": 15,
+            "comments": 0,
+            "shares": 0,
+            "saved": 3,
+            "total_interactions": 19,
+            "ig_reels_avg_watch_time": 6070,
+            "ig_reels_video_view_total_time": 2616448
+          },
+          "yt": {
+            "viewCount": "438",
+            "likeCount": "5",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "1"
+          }
+        }
+      }
     }
   ]
 }
