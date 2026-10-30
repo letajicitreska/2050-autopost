@@ -249,6 +249,86 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-10-30T11:36:46.122698+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 11,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 942,
+            "views": 1038,
+            "likes": 11,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 14,
+            "ig_reels_avg_watch_time": 17319,
+            "ig_reels_video_view_total_time": 16713480
+          },
+          "yt": {
+            "viewCount": "64",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "114-1-osm-bomb": {
+          "ig": {
+            "like_count": 1,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfDHP7wEVZU/",
+            "timestamp": "2026-10-28T18:49:59+0000",
+            "id": "17926432794199242",
+            "reach": 141,
+            "views": 186,
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 1,
+            "ig_reels_avg_watch_time": 3799,
+            "ig_reels_video_view_total_time": 619348
+          },
+          "yt": {
+            "viewCount": "103",
+            "likeCount": "0",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "117-0-promo": {
+          "ig": {
+            "like_count": 17,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De9rHRCATvp/",
+            "timestamp": "2026-10-26T16:07:43+0000",
+            "id": "17890523313685844",
+            "reach": 408,
+            "views": 523,
+            "likes": 17,
+            "comments": 0,
+            "shares": 0,
+            "saved": 3,
+            "total_interactions": 21,
+            "ig_reels_avg_watch_time": 6313,
+            "ig_reels_video_view_total_time": 2923057
+          },
+          "yt": {
+            "viewCount": "571",
+            "likeCount": "6",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "1"
+          }
+        }
+      }
     }
   ]
 }
