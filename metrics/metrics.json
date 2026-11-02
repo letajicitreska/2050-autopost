@@ -514,6 +514,111 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-11-02T13:49:59.847735+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 11,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 958,
+            "views": 1056,
+            "likes": 11,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 14,
+            "ig_reels_avg_watch_time": 17219,
+            "ig_reels_video_view_total_time": 16909270
+          },
+          "yt": {
+            "viewCount": "64",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "114-1-osm-bomb": {
+          "ig": {
+            "like_count": 1,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfDHP7wEVZU/",
+            "timestamp": "2026-10-28T18:49:59+0000",
+            "id": "17926432794199242",
+            "reach": 151,
+            "views": 202,
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 1,
+            "ig_reels_avg_watch_time": 3945,
+            "ig_reels_video_view_total_time": 706200
+          },
+          "yt": {
+            "viewCount": "148",
+            "likeCount": "0",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "113-6-tridit-plasty": {
+          "ig": {
+            "like_count": 14,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfKzPywlO9B/",
+            "timestamp": "2026-10-31T18:28:59+0000",
+            "id": "18126074377908105",
+            "reach": 321,
+            "views": 420,
+            "likes": 14,
+            "comments": 0,
+            "shares": 1,
+            "saved": 0,
+            "total_interactions": 19,
+            "ig_reels_avg_watch_time": 9411,
+            "ig_reels_video_view_total_time": 3294022
+          },
+          "yt": {
+            "viewCount": "256",
+            "likeCount": "3",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "117-0-promo": {
+          "ig": {
+            "like_count": 18,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De9rHRCATvp/",
+            "timestamp": "2026-10-26T16:07:43+0000",
+            "id": "17890523313685844",
+            "reach": 423,
+            "views": 550,
+            "likes": 18,
+            "comments": 0,
+            "shares": 0,
+            "saved": 3,
+            "total_interactions": 22,
+            "ig_reels_avg_watch_time": 6319,
+            "ig_reels_video_view_total_time": 3083742
+          },
+          "yt": {
+            "viewCount": "575",
+            "likeCount": "6",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "1"
+          }
+        }
+      }
     }
   ]
 }
