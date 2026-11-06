@@ -984,6 +984,136 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-11-06T13:13:20.613029+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 11,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 966,
+            "views": 1079,
+            "likes": 11,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 14,
+            "ig_reels_avg_watch_time": 17837,
+            "ig_reels_video_view_total_time": 17730002
+          },
+          "yt": {
+            "viewCount": "64",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "114-1-osm-bomb": {
+          "ig": {
+            "like_count": 1,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfDHP7wEVZU/",
+            "timestamp": "2026-10-28T18:49:59+0000",
+            "id": "17926432794199242",
+            "reach": 155,
+            "views": 212,
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 1,
+            "ig_reels_avg_watch_time": 3895,
+            "ig_reels_video_view_total_time": 720699
+          },
+          "yt": {
+            "viewCount": "150",
+            "likeCount": "0",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "113-6-tridit-plasty": {
+          "ig": {
+            "like_count": 17,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfKzPywlO9B/",
+            "timestamp": "2026-10-31T18:28:59+0000",
+            "id": "18126074377908105",
+            "reach": 374,
+            "views": 511,
+            "likes": 17,
+            "comments": 0,
+            "shares": 24,
+            "saved": 0,
+            "total_interactions": 45,
+            "ig_reels_avg_watch_time": 9469,
+            "ig_reels_video_view_total_time": 4024519
+          },
+          "yt": {
+            "viewCount": "325",
+            "likeCount": "3",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "112-1-proc-uhlikove-clo": {
+          "ig": {
+            "like_count": 3,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfTCTeWlqG_/",
+            "timestamp": "2026-11-03T23:14:13+0000",
+            "id": "18137736004748092",
+            "reach": 142,
+            "views": 164,
+            "likes": 3,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 3,
+            "ig_reels_avg_watch_time": 3718,
+            "ig_reels_video_view_total_time": 542839
+          },
+          "yt": {
+            "viewCount": "418",
+            "likeCount": "7",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "3"
+          }
+        },
+        "117-0-promo": {
+          "ig": {
+            "like_count": 18,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De9rHRCATvp/",
+            "timestamp": "2026-10-26T16:07:43+0000",
+            "id": "17890523313685844",
+            "reach": 429,
+            "views": 560,
+            "likes": 18,
+            "comments": 0,
+            "shares": 0,
+            "saved": 3,
+            "total_interactions": 22,
+            "ig_reels_avg_watch_time": 6278,
+            "ig_reels_video_view_total_time": 3126785
+          },
+          "yt": {
+            "viewCount": "578",
+            "likeCount": "6",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "1"
+          }
+        }
+      }
     }
   ]
 }
