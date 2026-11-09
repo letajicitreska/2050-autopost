@@ -253,7 +253,8 @@
         "#dekarbonizace",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "parked",
+      "parked_note": "odsunuto 9. 11. 2026: abstraktní ETS téma, krátká doba sledování; vrátit později"
     },
     {
       "id": "117-5-trh-to-nezaridi",
@@ -278,7 +279,8 @@
         "#klimatickápolitika",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "parked",
+      "parked_note": "odsunuto 9. 11. 2026: abstraktní ETS téma, krátká doba sledování; vrátit později"
     },
     {
       "id": "117-3-podnik-zavre",
