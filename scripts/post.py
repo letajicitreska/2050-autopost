@@ -28,7 +28,7 @@ def log(*a):
 
 
 # ---------- Instagram ----------
-def ig_publish(path, caption, token, cover_url=None):
+def ig_publish(path, caption, token, cover_url=None, collaborators=None):
     """Instagram Login API bere video z veřejné URL (video_url). Pokud není PUBLIC_BASE, zkusí resumable upload."""
     base = os.environ.get("PUBLIC_BASE", "").rstrip("/")
     payload = {
@@ -43,7 +43,18 @@ def ig_publish(path, caption, token, cover_url=None):
         payload["upload_type"] = "resumable"
     if cover_url:
         payload["cover_url"] = cover_url
+    if collaborators:
+        # max 3 účty; collab pozvánka čeká na přijetí druhou stranou
+        payload["collaborators"] = json.dumps([c.lstrip("@") for c in collaborators][:3])
     r = requests.post(f"{IG}/me/media", data=payload, timeout=60)
+    if not r.ok and collaborators:
+        # špatný/neveřejný účet nesmí shodit publikaci: zkusit bez collabu
+        first_err = f"{r.status_code} {r.text[:300]}"
+        log(f"IG container s collaborators selhal ({first_err}), zkouším bez nich")
+        payload.pop("collaborators", None)
+        r = requests.post(f"{IG}/me/media", data=payload, timeout=60)
+        if r.ok:
+            ig_publish.collab_error = first_err
     if not r.ok:
         raise RuntimeError(f"IG container: {r.status_code} {r.text}")
     j = r.json()
@@ -177,10 +188,22 @@ def main():
         try:
             if not it.get("ig_media_id"):
                 if DRY:
-                    log(f"[{it['id']}] DRY IG: {path.name}\n{caption}")
+                    log(f"[{it['id']}] DRY IG: {path.name} collab={it.get('collaborators', os.environ.get('IG_DEFAULT_COLLABORATORS', ''))}\n{caption}")
                 else:
                     cover_url = it.get("cover_url") or (f"{os.environ['PUBLIC_BASE'].rstrip('/')}/queue/{it['cover_file']}" if os.environ.get("PUBLIC_BASE") and it.get("cover_file") else None)
-                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"], cover_url)
+                    # hosté z položky + výchozí účty (např. Fakta o klimatu), bez duplicit, max 3
+                    collabs = []
+                    for c in list(it.get("collaborators", [])) + (os.environ.get("IG_DEFAULT_COLLABORATORS") or "faktaoklimatu").split(","):
+                        c = c.strip().lstrip("@")
+                        if c and c not in collabs:
+                            collabs.append(c)
+                    collabs = collabs[:3]
+                    ig_publish.collab_error = None
+                    it["ig_media_id"] = ig_publish(path, caption, os.environ["IG_ACCESS_TOKEN"], cover_url, collabs)
+                    if collabs and not ig_publish.collab_error:
+                        it["ig_collaborators"] = collabs
+                    elif ig_publish.collab_error:
+                        it["collab_error"] = f"publikováno bez collabu: {ig_publish.collab_error}"
                     log(f"[{it['id']}] IG OK {it['ig_media_id']}")
             if not it.get("yt_video_id"):
                 if DRY:
