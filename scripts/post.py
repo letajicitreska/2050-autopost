@@ -94,6 +94,29 @@ def ig_publish(path, caption, token, cover_url=None, collaborators=None):
     return p.json()["id"]
 
 
+def notify_story(item, media_id, token):
+    """Push na mobil (ntfy) hned po publikaci reelu: připomínka ručního sdílení do story."""
+    topic = os.environ.get("NTFY_TOPIC")
+    if not topic:
+        return
+    link = "https://www.instagram.com/2050_podcast/"
+    try:
+        j = requests.get(f"{IG}/{media_id}", params={"fields": "permalink", "access_token": token}, timeout=30).json()
+        link = j.get("permalink") or link
+    except Exception:
+        pass
+    title = item.get("title_yt", item["id"]).split(" | ")[0]
+    try:
+        requests.post(
+            f"https://ntfy.sh/{topic}",
+            data=f"Je venku: {title}. Sdílej ho do story.".encode("utf-8"),
+            headers={"Title": "Reel je na IG", "Click": link, "Priority": "high", "Tags": "movie_camera"},
+            timeout=30,
+        )
+    except Exception as e:
+        log(f"ntfy selhalo: {e}")
+
+
 # ---------- YouTube ----------
 def yt_access_token():
     r = requests.post(
@@ -172,6 +195,27 @@ def due(item, now):
 def main():
     plan = json.loads(PLAN.read_text())
     now = dt.datetime.now(dt.timezone.utc)
+    # GitHub cron chodí se zpožděním 30 min až hodiny. Běh spuštěný dřív proto počká
+    # do přesného času publikace (LOOKAHEAD_MIN dopředu), aby reel vyšel načas.
+    look = int(os.environ.get("LOOKAHEAD_MIN") or 0)
+    if look and not DRY:
+        upcoming = []
+        for i in plan["items"]:
+            if i.get("status") != "approved":
+                continue
+            t = dt.datetime.fromisoformat(i["publish_at"])
+            t = t if t.tzinfo else t.replace(tzinfo=dt.timezone.utc)
+            if now < t <= now + dt.timedelta(minutes=look):
+                upcoming.append(t)
+        if upcoming:
+            wait = (min(upcoming) - now).total_seconds() + 5
+            log(f"Čekám {int(wait)} s do času publikace {min(upcoming).isoformat()}")
+            time.sleep(wait)
+            # během čekání se fronta mohla změnit: načíst aktuální stav z main
+            import subprocess
+            subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"], cwd=ROOT, check=False)
+            plan = json.loads(PLAN.read_text())
+            now = dt.datetime.now(dt.timezone.utc)
     only = os.environ.get("ONLY_ID")
     todo = [i for i in plan["items"] if due(i, now) and (not only or i["id"] == only)]
     log(f"K publikování: {len(todo)}")
@@ -205,6 +249,7 @@ def main():
                     elif ig_publish.collab_error:
                         it["collab_error"] = f"publikováno bez collabu: {ig_publish.collab_error}"
                     log(f"[{it['id']}] IG OK {it['ig_media_id']}")
+                    notify_story(it, it["ig_media_id"], os.environ["IG_ACCESS_TOKEN"])
             if not it.get("yt_video_id"):
                 if DRY:
                     log(f"[{it['id']}] DRY YT: {it['title_yt']}")

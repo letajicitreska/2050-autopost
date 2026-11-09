@@ -6,6 +6,8 @@ on:
     paths: ["plan/schedule.json"]
   schedule:
     - cron: "7 * * * *"   # každou hodinu; publikuje jen položky, kterým nastal čas
+    - cron: "38 16 * * *" # záložní běhy před slotem 18:00 UTC (mimo vytížené celé hodiny),
+    - cron: "19 17 * * *" # počkají do přesného času publikace
   workflow_dispatch:
     inputs:
       dry_run:
@@ -25,9 +27,11 @@ permissions:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # vždy aktuální fronta, ne commit z doby spuštění (jinak hrozí dvojí publikace)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -39,6 +43,8 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           IG_DEFAULT_COLLABORATORS: ${{ vars.IG_DEFAULT_COLLABORATORS }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          LOOKAHEAD_MIN: ${{ github.event_name == 'schedule' && '90' || '0' }}
           PUBLIC_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           ONLY_ID: ${{ github.event.inputs.only_id }}
