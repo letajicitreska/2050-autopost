@@ -19,3 +19,9 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python scripts/refresh_ig_token.py
+      - name: Upozornit na selhání
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] && curl -s -H "Title: Obnova IG tokenu selhala" -H "Priority: high" -H "Tags: warning" -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" -d "Autopost se bez tokenu do pár dnů zastaví. Ťukni pro detail." "https://ntfy.sh/$NTFY_TOPIC" || true

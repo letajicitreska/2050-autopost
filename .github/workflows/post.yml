@@ -59,3 +59,9 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+      - name: Upozornit na selhání
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] && curl -s -H "Title: Autopost selhal" -H "Priority: high" -H "Tags: warning" -H "Click: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" -d "Běh publikace spadl. Ťukni pro detail." "https://ntfy.sh/$NTFY_TOPIC" || true

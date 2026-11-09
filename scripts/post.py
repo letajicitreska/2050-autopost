@@ -94,6 +94,19 @@ def ig_publish(path, caption, token, cover_url=None, collaborators=None):
     return p.json()["id"]
 
 
+def ntfy(title, msg, click=None, tags="warning"):
+    topic = os.environ.get("NTFY_TOPIC")
+    if not topic or DRY:
+        return
+    h = {"Title": title, "Priority": "high", "Tags": tags}
+    if click:
+        h["Click"] = click
+    try:
+        requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"), headers=h, timeout=30)
+    except Exception as e:
+        log(f"ntfy selhalo: {e}")
+
+
 def notify_story(item, media_id, token):
     """Push na mobil (ntfy) hned po publikaci reelu: připomínka ručního sdílení do story."""
     topic = os.environ.get("NTFY_TOPIC")
@@ -224,6 +237,7 @@ def main():
         if not path.exists():
             log(f"[{it['id']}] chybí soubor {path.name}, přeskakuji")
             it["error"] = "missing file"
+            ntfy("Reel nevyšel", f"{it['id']}: chybí video ve frontě")
             continue
         caption = it["caption_ig"] + ("\n\n" + " ".join(it.get("hashtags", [])) if it.get("hashtags") else "")
         ytdesc = it.get("desc_yt", "") + ("\n\n" + " ".join(it.get("hashtags", [])) if it.get("hashtags") else "")
@@ -248,6 +262,7 @@ def main():
                         it["ig_collaborators"] = collabs
                     elif ig_publish.collab_error:
                         it["collab_error"] = f"publikováno bez collabu: {ig_publish.collab_error}"
+                        ntfy("Reel vyšel bez collabu", f"{it['id']}: Instagram odmítl collab ({', '.join(collabs)})", tags="information_source")
                     log(f"[{it['id']}] IG OK {it['ig_media_id']}")
                     notify_story(it, it["ig_media_id"], os.environ["IG_ACCESS_TOKEN"])
             if not it.get("yt_video_id"):
@@ -273,6 +288,7 @@ def main():
         except Exception as e:  # nezastaví ostatní položky
             it["error"] = str(e)[:500]
             log(f"[{it['id']}] CHYBA: {e}")
+            ntfy("Reel nevyšel", f"{it['id']}: {str(e)[:180]}")
         if not DRY:
             PLAN.write_text(json.dumps(plan, ensure_ascii=False, indent=2))
     return 0
