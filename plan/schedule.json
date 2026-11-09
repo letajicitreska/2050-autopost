@@ -404,7 +404,10 @@
         "#požár",
         "#prokoppithart"
       ],
-      "status": "approved"
+      "status": "approved",
+      "collaborators": [
+        "prokoppithart"
+      ]
     },
     {
       "id": "113-5-posledni-optimismus",
