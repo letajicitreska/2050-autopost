@@ -1,0 +1,14 @@
+name: test-ntfy
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/test-ntfy.yml"]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] || { echo "secret chybí"; exit 1; }
+          curl -s -H "Title: Test autopostu" -H "Tags: white_check_mark" -H "Click: https://www.instagram.com/2050_podcast/" -d "Funguje to. Takhle ti přijde upozornění, že je reel venku." "https://ntfy.sh/$NTFY_TOPIC"
