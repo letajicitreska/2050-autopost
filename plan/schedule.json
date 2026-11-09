@@ -432,7 +432,10 @@
         "#klima",
         "#dankortus"
       ],
-      "status": "approved"
+      "status": "approved",
+      "collaborators": [
+        "klimatomluva"
+      ]
     },
     {
       "id": "116-3-rada-pro-starosty",
