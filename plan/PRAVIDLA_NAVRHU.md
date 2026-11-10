@@ -12,3 +12,5 @@
 
 ## Měsíční report (od prosince 2026)
 - Porovnej reely: (a) s collabem (`ig_collaborators`) vs. bez (před 12. 11. 2026 bez collabu), (b) načas vs. pozdě (`posted_at` víc než 15 min po `publish_at`; 112 a 77-3 vyšly pozdě večer/v noci). Hodnoť reach a views s ohledem na stáří reelu (srovnávej stejný den od publikace podle snapshotů v metrics.json) a odděl vliv hosta/epizody. Napiš, který faktor propad vysvětluje víc, a při malém vzorku to řekni.
+
+9. ŽÁDNÉ „ODKAZ V BIU“ (od 2026-11-10, Petr to řekl opakovaně): do popisků na Instagram nikdy nepiš „odkaz v biu“ ani jiný náznak odkazu v biu/profilu — žádný tam není. Konec popisku je prostě „Epizoda NNN“ nebo „Celá epizoda 117 je na Spotify, YouTube i v podcastových aplikacích.“ (bez odkazu). Odkaz na web patří jen do YouTube popisu (desc_yt).
