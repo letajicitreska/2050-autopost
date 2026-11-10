@@ -7,6 +7,13 @@
       "message": "Test připomínek: takhle bude vypadat upozornění na odkaz do prvního komentáře. Nic dělat nemusíš.",
       "click": "https://www.linkedin.com/feed/",
       "sent": "2026-11-10T11:31:59+00:00"
+    },
+    {
+      "id": "li-2026-11-11-np108",
+      "at": "2026-11-11T11:05:00Z",
+      "title": "LinkedIn: přidej komentář",
+      "message": "Přidej odkaz do prvního komentáře pod post „Nenásilný podcast 108: Saša Dobrovolná“: https://open.spotify.com/episode/1RGoJlxOP8Zs0uk6FMyOQu",
+      "click": "https://www.linkedin.com/in/me/recent-activity/all/"
     }
   ]
 }
