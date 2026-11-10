@@ -5,7 +5,8 @@
       "at": "2026-11-10T11:28:15+00:00",
       "title": "LinkedIn: přidej komentář (TEST)",
       "message": "Test připomínek: takhle bude vypadat upozornění na odkaz do prvního komentáře. Nic dělat nemusíš.",
-      "click": "https://www.linkedin.com/feed/"
+      "click": "https://www.linkedin.com/feed/",
+      "sent": "2026-11-10T11:31:59+00:00"
     }
   ]
 }
