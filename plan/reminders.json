@@ -14,6 +14,14 @@
       "title": "LinkedIn: přidej komentář",
       "message": "Přidej odkaz do prvního komentáře pod post „Nenásilný podcast 108: Saša Dobrovolná“: https://open.spotify.com/episode/1RGoJlxOP8Zs0uk6FMyOQu",
       "click": "https://www.linkedin.com/in/me/recent-activity/all/"
+    },
+    {
+      "id": "li-2026-11-19-karty",
+      "at": "2026-11-19T11:05:00Z",
+      "title": "LinkedIn: přidej komentář",
+      "message": "Přidej odkaz do prvního komentáře pod post „Zažiju něco dobrého a za dvě hodiny je to pryč“: https://karty.ink.cz",
+      "click": "https://www.linkedin.com/in/me/recent-activity/all/",
+      "sent": false
     }
   ]
 }
