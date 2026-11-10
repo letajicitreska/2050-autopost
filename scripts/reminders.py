@@ -17,10 +17,11 @@ for it in data.get("items", []):
         continue
     if not topic:
         print("NTFY_TOPIC chybí"); sys.exit(1)
-    h = {"Title": it["title"], "Priority": "high", "Tags": "speech_balloon"}
+    body = {"topic": topic, "title": it["title"], "message": it["message"],
+            "priority": 4, "tags": ["speech_balloon"]}
     if it.get("click"):
-        h["Click"] = it["click"]
-    r = requests.post(f"https://ntfy.sh/{topic}", data=it["message"].encode("utf-8"), headers=h, timeout=30)
+        body["click"] = it["click"]
+    r = requests.post("https://ntfy.sh/", json=body, timeout=30)
     if r.ok:
         it["sent"] = now.isoformat(timespec="seconds")
         changed = True
