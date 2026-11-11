@@ -1759,6 +1759,186 @@
           }
         }
       }
+    },
+    {
+      "at": "2026-11-11T12:55:48.461388+00:00",
+      "items": {
+        "116-1-moderni-technika": {
+          "ig": {
+            "like_count": 11,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De7WgcWAOTT/",
+            "timestamp": "2026-10-25T18:29:05+0000",
+            "id": "18118086682811807",
+            "reach": 969,
+            "views": 1084,
+            "likes": 11,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 14,
+            "ig_reels_avg_watch_time": 17796,
+            "ig_reels_video_view_total_time": 17778563
+          },
+          "yt": {
+            "viewCount": "64",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "114-1-osm-bomb": {
+          "ig": {
+            "like_count": 1,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfDHP7wEVZU/",
+            "timestamp": "2026-10-28T18:49:59+0000",
+            "id": "17926432794199242",
+            "reach": 158,
+            "views": 221,
+            "likes": 1,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 1,
+            "ig_reels_avg_watch_time": 3936,
+            "ig_reels_video_view_total_time": 767589
+          },
+          "yt": {
+            "viewCount": "154",
+            "likeCount": "0",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "113-6-tridit-plasty": {
+          "ig": {
+            "like_count": 17,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfKzPywlO9B/",
+            "timestamp": "2026-10-31T18:28:59+0000",
+            "id": "18126074377908105",
+            "reach": 387,
+            "views": 535,
+            "likes": 17,
+            "comments": 0,
+            "shares": 24,
+            "saved": 0,
+            "total_interactions": 45,
+            "ig_reels_avg_watch_time": 9374,
+            "ig_reels_video_view_total_time": 4171634
+          },
+          "yt": {
+            "viewCount": "333",
+            "likeCount": "3",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "112-1-proc-uhlikove-clo": {
+          "ig": {
+            "like_count": 3,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfTCTeWlqG_/",
+            "timestamp": "2026-11-03T23:14:13+0000",
+            "id": "18137736004748092",
+            "reach": 170,
+            "views": 204,
+            "likes": 3,
+            "comments": 0,
+            "shares": 0,
+            "saved": 1,
+            "total_interactions": 4,
+            "ig_reels_avg_watch_time": 4316,
+            "ig_reels_video_view_total_time": 764075
+          },
+          "yt": {
+            "viewCount": "432",
+            "likeCount": "7",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "3"
+          }
+        },
+        "77-3-hosti": {
+          "ig": {
+            "like_count": 5,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/DfagOHPD5hJ/",
+            "timestamp": "2026-11-06T20:50:16+0000",
+            "id": "17893077615455210",
+            "reach": 220,
+            "views": 286,
+            "likes": 5,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 7,
+            "ig_reels_avg_watch_time": 5050,
+            "ig_reels_video_view_total_time": 1242347
+          },
+          "yt": {
+            "viewCount": "316",
+            "likeCount": "3",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        },
+        "117-0-promo": {
+          "ig": {
+            "like_count": 18,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/De9rHRCATvp/",
+            "timestamp": "2026-10-26T16:07:43+0000",
+            "id": "17890523313685844",
+            "reach": 431,
+            "views": 565,
+            "likes": 18,
+            "comments": 0,
+            "shares": 0,
+            "saved": 3,
+            "total_interactions": 22,
+            "ig_reels_avg_watch_time": 6362,
+            "ig_reels_video_view_total_time": 3200550
+          },
+          "yt": {
+            "viewCount": "579",
+            "likeCount": "6",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "1"
+          }
+        },
+        "117-1-obetni-beranek": {
+          "ig": {
+            "like_count": 3,
+            "comments_count": 0,
+            "permalink": "https://www.instagram.com/reel/Dfh__yViXj0/",
+            "timestamp": "2026-11-09T18:43:29+0000",
+            "id": "18359433742175104",
+            "reach": 457,
+            "views": 529,
+            "likes": 3,
+            "comments": 0,
+            "shares": 0,
+            "saved": 0,
+            "total_interactions": 3,
+            "ig_reels_avg_watch_time": 6951,
+            "ig_reels_video_view_total_time": 3419990
+          },
+          "yt": {
+            "viewCount": "133",
+            "likeCount": "1",
+            "dislikeCount": "0",
+            "favoriteCount": "0",
+            "commentCount": "0"
+          }
+        }
+      }
     }
   ]
 }
