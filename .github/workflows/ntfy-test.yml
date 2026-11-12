@@ -1,0 +1,34 @@
+name: ntfy-test
+
+# Jednorázový test upozornění přes skutečné funkce post.py. Po testu smazat.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Testovací upozornění reels
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          python - <<'PY'
+          import os, sys, time
+          sys.path.insert(0, "scripts")
+          import post
+          t = os.environ["NTFY_TOPIC"]
+          post.ntfy_send(t, "Reel je na IG (TEST)", "Je venku: test. Sdílej ho do story.", click="https://www.instagram.com/2050_podcast/", tags="movie_camera")
+          time.sleep(20)
+          post.ntfy("Reel vyšel bez collabu (TEST)", "test: Instagram odmítl collab", tags="information_source")
+          print("odesláno 2 testy")
+          PY
