@@ -23,14 +23,6 @@
       "message": "Přidej odkaz do prvního komentáře pod post „Zažiju něco dobrého a za dvě hodiny je to pryč“: https://karty.ink.cz",
       "click": "https://www.linkedin.com/in/me/recent-activity/all/",
       "sent": false
-    },
-    {
-      "id": "test-20261112-1847",
-      "at": "2026-11-12T17:46:34+00:00",
-      "title": "LinkedIn: přidej komentář (TEST)",
-      "message": "Test připomínky k LinkedIn postu.",
-      "click": "https://www.linkedin.com/",
-      "sent": "2026-11-12T17:47:14+00:00"
     }
   ]
 }
