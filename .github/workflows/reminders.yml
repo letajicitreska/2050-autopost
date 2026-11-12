@@ -18,7 +18,7 @@ permissions:
 jobs:
   remind:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 360   # běh až ~5 h čeká na přesný čas připomínky
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,6 +30,7 @@ jobs:
       - name: Poslat splatné připomínky
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          WAIT_MIN: ${{ github.event_name == 'schedule' && '320' || '0' }}
         run: python scripts/reminders.py
       - name: Uložit stav
         if: always()

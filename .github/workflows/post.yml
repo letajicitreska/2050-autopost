@@ -6,8 +6,9 @@ on:
     paths: ["plan/schedule.json"]
   schedule:
     - cron: "7 * * * *"   # každou hodinu; publikuje jen položky, kterým nastal čas
-    - cron: "38 16 * * *" # záložní běhy před slotem 18:00 UTC (mimo vytížené celé hodiny),
-    - cron: "19 17 * * *" # počkají do přesného času publikace
+    - cron: "47 13 * * *" # záložní běhy před slotem 18:00 UTC (mimo vytížené celé hodiny),
+    - cron: "38 16 * * *" # běh do 5 h před slotem počká na přesný čas publikace
+    - cron: "19 17 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
