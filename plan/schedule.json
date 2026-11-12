@@ -331,7 +331,13 @@
         "#teplota",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "posted",
+      "ig_media_id": "18117572012589345",
+      "ig_collaborators": [
+        "faktaoklimatu"
+      ],
+      "yt_video_id": "sk69L_coKf0",
+      "posted_at": "2026-11-12T18:25:46.273074+00:00"
     },
     {
       "id": "109-2-energy-only-market",
