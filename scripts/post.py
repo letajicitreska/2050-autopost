@@ -147,7 +147,17 @@ def yt_access_token():
     return r.json()["access_token"]
 
 
-def yt_upload(path, title, description, tags):
+def yt_status(publish_at=None, public=False):
+    """publish_at (datetime UTC) = soukromé video, YouTube ho samo zveřejní v ten čas."""
+    if public:
+        return {"privacyStatus": "public", "selfDeclaredMadeForKids": False}
+    st = {"privacyStatus": "private", "selfDeclaredMadeForKids": False}
+    if publish_at:
+        st["publishAt"] = publish_at.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    return st
+
+
+def yt_upload(path, title, description, tags, publish_at=None):
     token = yt_access_token()
     size = path.stat().st_size
     meta = {
@@ -157,7 +167,7 @@ def yt_upload(path, title, description, tags):
             "tags": tags,
             "categoryId": "27",
         },
-        "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False},
+        "status": yt_status(publish_at) if publish_at else yt_status(public=True),
     }
     init = requests.post(
         "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
@@ -195,6 +205,106 @@ def yt_thumbnail(video_id, cover_path):
         raise RuntimeError(f"YT thumbnail: {r.status_code} {r.text[:200]}")
 
 
+def yt_update_status(video_id, status):
+    token = yt_access_token()
+    r = requests.put(
+        "https://www.googleapis.com/youtube/v3/videos?part=status",
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json; charset=UTF-8"},
+        data=json.dumps({"id": video_id, "status": status}),
+        timeout=60,
+    )
+    if not r.ok:
+        raise RuntimeError(f"YT update: {r.status_code} {r.text[:300]}")
+
+
+# ---------- YouTube dopředu (naplánované zveřejnění) ----------
+# GitHub cron chodí o hodiny později, YouTube ale umí zveřejnit video samo v daný čas.
+# Short se proto nahraje dopředu jako soukromý s publishAt (pole yt_prestaged=true,
+# yt_publish_at = čas, na který je u YouTube nastavený). Když se čas položky změní nebo
+# položka přestane být approved, čas u YouTube se srovná (parked = soukromé bez času).
+YT_AHEAD = dt.timedelta(hours=36)
+YT_MIN_LEAD = dt.timedelta(minutes=20)
+
+
+def pub_time(item):
+    t = dt.datetime.fromisoformat(item["publish_at"])
+    return t if t.tzinfo else t.replace(tzinfo=dt.timezone.utc)
+
+
+def yt_desc(it):
+    d = it.get("desc_yt", "") + ("\n\n" + " ".join(it.get("hashtags", [])) if it.get("hashtags") else "")
+    return d if "#Shorts" in d else d + " #Shorts"
+
+
+def yt_prestage(plan, now):
+    """Vrátí True, pokud se něco změnilo (pak je potřeba stav hned uložit a pushnout)."""
+    changed = False
+    for it in plan["items"]:
+        if it.get("status") == "posted":
+            continue
+        try:
+            t = pub_time(it)
+            if it.get("yt_prestaged") and it.get("yt_video_id"):
+                if it.get("status") != "approved":
+                    if it.get("yt_publish_at"):
+                        if DRY:
+                            log(f"[{it['id']}] DRY YT: zrušit naplánování")
+                            continue
+                        yt_update_status(it["yt_video_id"], yt_status())
+                        it["yt_publish_at"] = None
+                        changed = True
+                        log(f"[{it['id']}] YT: naplánování zrušeno (status {it.get('status')})")
+                elif it.get("yt_publish_at") != it["publish_at"]:
+                    public_now = t <= now + dt.timedelta(minutes=2)
+                    if DRY:
+                        log(f"[{it['id']}] DRY YT: přeplánovat na {it['publish_at']}")
+                        continue
+                    yt_update_status(it["yt_video_id"], yt_status(None if public_now else t, public=public_now))
+                    it["yt_publish_at"] = it["publish_at"]
+                    changed = True
+                    log(f"[{it['id']}] YT: " + ("zveřejněno hned" if public_now else f"přeplánováno na {it['publish_at']}"))
+                continue
+            if it.get("status") != "approved" or it.get("yt_video_id"):
+                continue
+            if not (now + YT_MIN_LEAD < t <= now + YT_AHEAD):
+                continue
+            path = ROOT / "queue" / it["file"]
+            if not path.exists():
+                continue  # chybějící soubor ohlásí hlavní smyčka v čase publikace
+            if DRY:
+                log(f"[{it['id']}] DRY YT dopředu na {it['publish_at']}: {it['title_yt']}")
+                continue
+            it["yt_video_id"] = yt_upload(path, it["title_yt"], yt_desc(it), it.get("tags_yt", []), publish_at=t)
+            it["yt_prestaged"] = True
+            it["yt_publish_at"] = it["publish_at"]
+            changed = True
+            log(f"[{it['id']}] YT naplánováno na {it['publish_at']}: {it['yt_video_id']}")
+            cover = ROOT / "queue" / it["cover_file"] if it.get("cover_file") else None
+            if cover and cover.exists():
+                try:
+                    yt_thumbnail(it["yt_video_id"], cover)
+                except Exception as e:
+                    log(f"[{it['id']}] YT miniatura selhala: {e}")
+        except Exception as e:  # nevadí: hlavní smyčka v čase publikace nahraje Short veřejně
+            log(f"[{it['id']}] YT dopředu selhalo: {e}")
+    return changed
+
+
+def save_and_push(plan, msg):
+    """Uloží frontu a hned ji pushne (aby se po případném pádu během čekání nic nenahrálo dvakrát)."""
+    import subprocess
+    PLAN.write_text(json.dumps(plan, ensure_ascii=False, indent=2))
+    g = ["git", "-c", "user.name=2050-autopost", "-c", "user.email=autopost@users.noreply.github.com"]
+    subprocess.run(g + ["add", "plan"], cwd=ROOT, check=True)
+    subprocess.run(g + ["commit", "-q", "-m", msg], cwd=ROOT, check=False)
+    for _ in range(3):
+        subprocess.run(g + ["pull", "-q", "--rebase", "origin", "main"], cwd=ROOT, check=False)
+        if subprocess.run(g + ["push", "-q"], cwd=ROOT).returncode == 0:
+            return True
+        time.sleep(5)
+    return False
+
+
 # ---------- hlavní smyčka ----------
 def due(item, now):
     if item.get("status") != "approved":
@@ -208,10 +318,17 @@ def due(item, now):
 def main():
     plan = json.loads(PLAN.read_text())
     now = dt.datetime.now(dt.timezone.utc)
-    # GitHub cron chodí se zpožděním 30 min až hodiny. Běh spuštěný dřív proto počká
-    # do přesného času publikace (LOOKAHEAD_MIN dopředu), aby reel vyšel načas.
+    # GitHub cron chodí se zpožděním 30 min až hodiny (plánované běhy reálně jen každé
+    # 3–8 h). Běh, který naběhne do LOOKAHEAD_MIN (300 = 5 h) před časem publikace,
+    # počká a zveřejní IG přesně. YouTube je naplánované dopředu (yt_prestage).
+    only = os.environ.get("ONLY_ID")
+    saved = True
+    if not only and yt_prestage(plan, now):
+        saved = save_and_push(plan, "autopost: YouTube naplánováno")
+        if not saved:
+            log("Push stavu selhal, dnes nečekám (stav uloží závěrečný krok workflow)")
     look = int(os.environ.get("LOOKAHEAD_MIN") or 0)
-    if look and not DRY:
+    if look and not DRY and saved:
         upcoming = []
         for i in plan["items"]:
             if i.get("status") != "approved":
@@ -229,7 +346,6 @@ def main():
             subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"], cwd=ROOT, check=False)
             plan = json.loads(PLAN.read_text())
             now = dt.datetime.now(dt.timezone.utc)
-    only = os.environ.get("ONLY_ID")
     todo = [i for i in plan["items"] if due(i, now) and (not only or i["id"] == only)]
     log(f"K publikování: {len(todo)}")
     for it in todo:
@@ -240,9 +356,7 @@ def main():
             ntfy("Reel nevyšel", f"{it['id']}: chybí video ve frontě")
             continue
         caption = it["caption_ig"] + ("\n\n" + " ".join(it.get("hashtags", [])) if it.get("hashtags") else "")
-        ytdesc = it.get("desc_yt", "") + ("\n\n" + " ".join(it.get("hashtags", [])) if it.get("hashtags") else "")
-        if "#Shorts" not in ytdesc:
-            ytdesc += " #Shorts"
+        ytdesc = yt_desc(it)
         try:
             if not it.get("ig_media_id"):
                 if DRY:
@@ -278,6 +392,11 @@ def main():
                             log(f"[{it['id']}] YT miniatura OK")
                         except Exception as e:
                             log(f"[{it['id']}] YT miniatura selhala: {e}")
+            if not DRY and it.get("yt_prestaged") and it.get("yt_publish_at") != it["publish_at"]:
+                # Short je u YouTube naplánovaný na jiný (zrušený nebo starý) čas: zveřejnit hned
+                yt_update_status(it["yt_video_id"], yt_status(public=True))
+                it["yt_publish_at"] = it["publish_at"]
+                log(f"[{it['id']}] YT zveřejněno hned")
             if not DRY and it.get("ig_media_id") and it.get("yt_video_id"):
                 it["status"] = "posted"
                 it["posted_at"] = dt.datetime.now(dt.timezone.utc).isoformat()

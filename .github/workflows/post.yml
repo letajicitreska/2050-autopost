@@ -27,7 +27,7 @@ permissions:
 jobs:
   post:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 360   # maximum GitHubu; běh až 5 h čeká na slot
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,7 +44,7 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           IG_DEFAULT_COLLABORATORS: ${{ vars.IG_DEFAULT_COLLABORATORS }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          LOOKAHEAD_MIN: ${{ github.event_name == 'schedule' && '90' || '0' }}
+          LOOKAHEAD_MIN: ${{ github.event_name == 'schedule' && '300' || '0' }}
           PUBLIC_BASE: https://raw.githubusercontent.com/${{ github.repository }}/main
           DRY_RUN: ${{ github.event.inputs.dry_run }}
           ONLY_ID: ${{ github.event.inputs.only_id }}
