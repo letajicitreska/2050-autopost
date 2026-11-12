@@ -98,11 +98,19 @@ def ntfy(title, msg, click=None, tags="warning"):
     topic = os.environ.get("NTFY_TOPIC")
     if not topic or DRY:
         return
-    h = {"Title": title, "Priority": "high", "Tags": tags}
+    ntfy_send(topic, title, msg, click=click, tags=tags)
+
+
+def ntfy_send(topic, title, msg, click=None, tags="warning"):
+    """Odeslání přes JSON: diakritika v titulku nesmí do HTTP hlavičky
+    (requests ji neumí zakódovat a požadavek vůbec neodejde)."""
+    body = {"topic": topic, "title": title, "message": msg, "priority": 4, "tags": [tags]}
     if click:
-        h["Click"] = click
+        body["click"] = click
     try:
-        requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"), headers=h, timeout=30)
+        r = requests.post("https://ntfy.sh/", json=body, timeout=30)
+        if not r.ok:
+            log(f"ntfy selhalo: HTTP {r.status_code}")
     except Exception as e:
         log(f"ntfy selhalo: {e}")
 
@@ -119,15 +127,7 @@ def notify_story(item, media_id, token):
     except Exception:
         pass
     title = item.get("title_yt", item["id"]).split(" | ")[0]
-    try:
-        requests.post(
-            f"https://ntfy.sh/{topic}",
-            data=f"Je venku: {title}. Sdílej ho do story.".encode("utf-8"),
-            headers={"Title": "Reel je na IG", "Click": link, "Priority": "high", "Tags": "movie_camera"},
-            timeout=30,
-        )
-    except Exception as e:
-        log(f"ntfy selhalo: {e}")
+    ntfy_send(topic, "Reel je na IG", f"Je venku: {title}. Sdílej ho do story.", click=link, tags="movie_camera")
 
 
 # ---------- YouTube ----------
