@@ -362,10 +362,15 @@
         "#energetika",
         "#faktaoklimatu"
       ],
-      "status": "approved",
+      "status": "posted",
       "yt_video_id": "kSaZoDk7kXk",
       "yt_prestaged": true,
-      "yt_publish_at": "2026-11-15T18:00:00+00:00"
+      "yt_publish_at": "2026-11-15T18:00:00+00:00",
+      "ig_media_id": "18109663505632630",
+      "ig_collaborators": [
+        "faktaoklimatu"
+      ],
+      "posted_at": "2026-11-15T18:01:47.463621+00:00"
     },
     {
       "id": "116-2-kolik-kraj-plati",
