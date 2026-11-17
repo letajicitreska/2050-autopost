@@ -503,6 +503,34 @@
         "#faktaoklimatu"
       ],
       "status": "approved"
+    },
+    {
+      "id": "114-3-gronsko-vysoka-hora",
+      "episode": 114,
+      "file": "114_3-gronsko-vysoka-hora.mp4",
+      "cover_file": "114_3-gronsko-vysoka-hora_cover.jpg",
+      "publish_at": "2026-12-06T18:00:00+00:00",
+      "caption_ig": "Ledovec v Grónsku je vlastně něco jako vysoká hora.\n\nVysoký je přes tři tisíce metrů, takže jeho vrchol je v chladném vzduchu jen díky nadmořské výšce. Když ledovec roztaje a sníží se, ocitne se v teplejších výškách a začne odtávat sám od sebe, i když se teplota ustálí. Petr Daniš, hlavní autor Atlasu klimatické změny, o jednom z bodů zlomu.\n\nEpizoda 114",
+      "title_yt": "Proč je grónský ledovec vlastně vysoká hora | Petr Daniš | Podcast 2050",
+      "desc_yt": "Petr Daniš o tom, proč grónský ledovec odtává sám od sebe, i když se teplota ustálí. Celá epizoda: https://2050podcast.cz/epizody/114 #Shorts",
+      "tags_yt": [
+        "Grónsko",
+        "ledovec",
+        "body zlomu",
+        "změna klimatu",
+        "Petr Daniš",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#grónsko",
+        "#ledovec",
+        "#bodyzlomu",
+        "#změnaklimatu",
+        "#atlasklimatickézměny",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
     }
   ]
 }
