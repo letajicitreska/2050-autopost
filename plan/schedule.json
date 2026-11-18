@@ -227,10 +227,15 @@
         "#dekarbonizace",
         "#faktaoklimatu"
       ],
-      "status": "approved",
+      "status": "posted",
       "yt_video_id": "HCCTs-tJ1hE",
       "yt_prestaged": true,
-      "yt_publish_at": "2026-11-18T18:00:00+00:00"
+      "yt_publish_at": "2026-11-18T18:00:00+00:00",
+      "ig_media_id": "17915820303502170",
+      "ig_collaborators": [
+        "faktaoklimatu"
+      ],
+      "posted_at": "2026-11-18T21:21:46.452820+00:00"
     },
     {
       "id": "117-2-cina-a-evropa",
