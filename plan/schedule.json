@@ -403,7 +403,10 @@
         "#jihomoravskykraj",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "approved",
+      "yt_video_id": "M1s5GkDujvA",
+      "yt_prestaged": true,
+      "yt_publish_at": "2026-11-21T18:00:00+00:00"
     },
     {
       "id": "77-2-spaleny-les",
