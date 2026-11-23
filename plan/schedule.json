@@ -550,6 +550,56 @@
         "#faktaoklimatu"
       ],
       "status": "approved"
+    },
+    {
+      "id": "109-3-kdo-to-zaplati",
+      "episode": 109,
+      "file": "109_3-kdo-to-zaplati.mp4",
+      "cover_file": "109_3-kdo-to-zaplati_cover.jpg",
+      "publish_at": "2026-12-09T18:00:00+00:00",
+      "caption_ig": "Kapacitní trh má zajistit dostatek řiditelných elektráren pro spolehlivé dodávky elektřiny. Otázka je, kdo to zaplatí.\n\nZaplatí to zákazníci.\n\nJan Krčál z Faktů o klimatu. Z epizody 109.",
+      "title_yt": "Kapacitní trh: kdo to zaplatí? | Jan Krčál | Podcast 2050",
+      "desc_yt": "Jan Krčál z Faktů o klimatu o tom, kdo zaplatí kapacitní trh. Celá epizoda: https://2050podcast.cz/epizody/109 #Shorts",
+      "tags_yt": [
+        "kapacitní trh",
+        "elektřina",
+        "řiditelné zdroje",
+        "Jan Krčál",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#kapacitnitrh",
+        "#elektřina",
+        "#energetika",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "110-3-plyn-uz-navzdy",
+      "episode": 110,
+      "file": "110_3-plyn-uz-navzdy.mp4",
+      "cover_file": "110_3-plyn-uz-navzdy_cover.jpg",
+      "publish_at": "2026-12-12T18:00:00+00:00",
+      "caption_ig": "Plyn už navždy?\n\nJedno z rizik při návrhu kapacitního trhu, které se dá vyčíst z polské zkušenosti.\n\nEpizoda 110.",
+      "title_yt": "Plyn už navždy? | Kapacitní trh | Podcast 2050",
+      "desc_yt": "Plyn už navždy? Jedno z rizik při návrhu kapacitního trhu, z polské zkušenosti. Celá epizoda: https://2050podcast.cz/epizody/110 #Shorts",
+      "tags_yt": [
+        "kapacitní trh",
+        "plyn",
+        "elektřina",
+        "Polsko",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#kapacitnitrh",
+        "#plyn",
+        "#energetika",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
     }
   ]
 }
