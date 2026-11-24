@@ -436,13 +436,19 @@
         "#požár",
         "#prokoppithart"
       ],
-      "status": "approved",
+      "status": "posted",
       "collaborators": [
         "prokoppithart"
       ],
       "yt_video_id": "eAA01QbCOL0",
       "yt_prestaged": true,
-      "yt_publish_at": "2026-11-24T18:00:00+00:00"
+      "yt_publish_at": "2026-11-24T18:00:00+00:00",
+      "ig_media_id": "18122580460966226",
+      "ig_collaborators": [
+        "prokoppithart",
+        "faktaoklimatu"
+      ],
+      "posted_at": "2026-11-24T18:01:10.084444+00:00"
     },
     {
       "id": "113-5-posledni-optimismus",
