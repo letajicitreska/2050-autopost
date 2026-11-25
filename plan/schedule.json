@@ -686,6 +686,26 @@
         "#faktaoklimatu"
       ],
       "status": "approved"
+    },
+    {
+      "id": "118-0-promo",
+      "episode": 118,
+      "file": "118_0_promo.mp4",
+      "cover_file": "118_0_promo_cover.jpg",
+      "publish_at": "2026-11-25T12:25:16+00:00",
+      "caption_ig": "(jen YouTube, Instagram postnul Petr ručně)",
+      "ig_media_id": "manual-petr",
+      "title_yt": "Geopolitická weaponizace fosilních paliv | Michael Romancov naživo | Podcast 2050",
+      "desc_yt": "Upoutávka na epizodu 118 Podcastu 2050: Michael Romancov z FSV UK naživo na Korzu Národní o tom, jak se z fosilních paliv stává geopolitická zbraň. Celá epizoda: https://2050podcast.cz/epizody/118 #Shorts",
+      "tags_yt": [
+        "geopolitika",
+        "fosilní paliva",
+        "Michael Romancov",
+        "živě",
+        "podcast 2050"
+      ],
+      "hashtags": [],
+      "status": "approved"
     }
   ]
 }
