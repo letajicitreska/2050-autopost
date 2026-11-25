@@ -631,7 +631,11 @@
         "#energetika",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "approved",
+      "collaborators": [
+        "dikyzemuzem",
+        "michael.romancov"
+      ]
     },
     {
       "id": "118-3-cert-a-dabel",
@@ -658,7 +662,11 @@
         "#dekarbonizace",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "approved",
+      "collaborators": [
+        "dikyzemuzem",
+        "michael.romancov"
+      ]
     },
     {
       "id": "118-2-just-in-case",
@@ -685,7 +693,11 @@
         "#obchod",
         "#faktaoklimatu"
       ],
-      "status": "approved"
+      "status": "approved",
+      "collaborators": [
+        "dikyzemuzem",
+        "michael.romancov"
+      ]
     },
     {
       "id": "118-0-promo",
