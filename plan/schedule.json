@@ -483,7 +483,7 @@
       "episode": 116,
       "file": "116_3-rada-pro-starosty.mp4",
       "cover_file": "116_3-rada-pro-starosty_cover.jpg",
-      "publish_at": "2026-12-03T18:00:00+00:00",
+      "publish_at": "2026-12-21T18:00:00+00:00",
       "caption_ig": "Starosto, starostko: ozvěte se svému kraji.\n\nOd ledna 2026 mají všechny kraje peníze na síť odborníků, kteří obcím pomáhají s budovami, energetickým managementem, čističkami odpadních vod i horkými ostrovy ve městech. A co zvládnete sami: mít u budov projektovou dokumentaci a průkazy, vyúčtování častěji než jednou za rok a aspoň jednou měsíčně opsat číslo z elektroměru. Až se bude plánovat rekonstrukce, bude z čeho vycházet.\n\nPošli to svému starostovi. Z epizody 116.",
       "title_yt": "Rada pro starosty: ozvěte se svému kraji | Karolína Smutková | Podcast 2050",
       "desc_yt": "Karolína Smutková radí starostům: využijte odborníky v kraji a začněte měsíčně odečítat spotřebu energií v budovách. Celá epizoda: https://2050podcast.cz/epizody/116 #Shorts",
@@ -603,6 +603,86 @@
         "#kapacitnitrh",
         "#plyn",
         "#energetika",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "118-1-kdyz-svet-jel-na-drevo",
+      "episode": 118,
+      "file": "118_1_kdyz-svet-jel-na-drevo.mp4",
+      "cover_file": "118_1_kdyz-svet-jel-na-drevo_cover.jpg",
+      "publish_at": "2026-12-03T18:00:00+00:00",
+      "caption_ig": "Než přišlo uhlí, jel svět na dřevo. A už dřevo se dalo použít jako zbraň.\n\nKdo stavěl lodě, potřeboval víc dřeva, než měl doma. Nizozemci ho vozili z Baltu, takže komu se nelíbili, stačilo zablokovat Balt. A když britské královské námořnictvo spotřebovalo tolik dřeva, že ho začalo chybět, lidé dostali jasný vzkaz: spalujte něco jiného. Tak začal příběh uhlí.\n\nMichael Romancov z FSV UK naživo na Korzu Národní. Epizoda 118: Geopolitická weaponizace fosilních paliv.",
+      "title_yt": "Když svět jel na dřevo | Michael Romancov | Podcast 2050",
+      "desc_yt": "Michael Romancov o tom, jak se dřevo stalo strategickou surovinou a proč Británie přešla na uhlí. Celá epizoda: https://2050podcast.cz/epizody/118 #Shorts",
+      "tags_yt": [
+        "geopolitika",
+        "historie energetiky",
+        "uhlí",
+        "Michael Romancov",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#geopolitika",
+        "#historie",
+        "#uhlí",
+        "#energetika",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "118-3-cert-a-dabel",
+      "episode": 118,
+      "file": "118_3_cert-a-dabel.mp4",
+      "cover_file": "118_3_cert-a-dabel_cover.jpg",
+      "publish_at": "2026-12-18T18:00:00+00:00",
+      "caption_ig": "Zhruba 90 % solárních panelů se vyrábí v Číně.\n\nZbavíme se závislosti na ruských fosilních palivech, jen abychom spadli do závislosti na Číně? Michael Romancov odpovídá napřímo: Západ nechal Číňany převzít nejen výrobu větrníků a solárních panelů, ale i jejich vývoj. Tenisově řečeno je to třicet nebo čtyřicet nula pro Čínu. Game ale ještě ztracený není.\n\n🎧 Epizoda 118, odkaz v biu.",
+      "title_yt": "Vyženeme čerta ďáblem? Čína a zelené technologie | Michael Romancov | Podcast 2050",
+      "desc_yt": "Nahradíme závislost na Rusku závislostí na Číně? Michael Romancov o tom, kde Evropa v zelených technologiích je. Celá epizoda: https://2050podcast.cz/epizody/118 #Shorts",
+      "tags_yt": [
+        "Čína",
+        "solární panely",
+        "geopolitika",
+        "dekarbonizace",
+        "Michael Romancov",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#Čína",
+        "#solárníenergie",
+        "#geopolitika",
+        "#dekarbonizace",
+        "#faktaoklimatu"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "118-2-just-in-case",
+      "episode": 118,
+      "file": "118_2_just-in-case.mp4",
+      "cover_file": "118_2_just-in-case_cover.jpg",
+      "publish_at": "2026-12-30T18:00:00+00:00",
+      "caption_ig": "„Do půlnoci objednáš, ráno máš.“\n\nFirmy roky nedržely zásoby, protože globalizace fungovala bez zádrhelů. Teď se podle Michaela Romancova učí znovu: už nejde o to, aby věc dorazila včas, ale aby vůbec dorazila. Žijeme ve světě just in case, a to platí i pro energetické suroviny.\n\nhttps://2050podcast.cz/epizody/118",
+      "title_yt": "Od „on time“ k „just in case“ | Michael Romancov | Podcast 2050",
+      "desc_yt": "Proč firmy znovu řeší zásoby a trasy dodávek, včetně energetických surovin. Michael Romancov v Podcastu 2050. Celá epizoda: https://2050podcast.cz/epizody/118 #Shorts",
+      "tags_yt": [
+        "globalizace",
+        "zásoby",
+        "geopolitika",
+        "energetické suroviny",
+        "Michael Romancov",
+        "podcast 2050"
+      ],
+      "hashtags": [
+        "#podcast2050",
+        "#globalizace",
+        "#geopolitika",
+        "#energetika",
+        "#obchod",
         "#faktaoklimatu"
       ],
       "status": "approved"
