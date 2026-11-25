@@ -705,7 +705,9 @@
         "podcast 2050"
       ],
       "hashtags": [],
-      "status": "approved"
+      "status": "posted",
+      "yt_video_id": "9eonD5OoWp4",
+      "posted_at": "2026-11-25T12:28:24.182766+00:00"
     }
   ]
 }
