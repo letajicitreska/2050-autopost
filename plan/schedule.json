@@ -527,10 +527,15 @@
         "#energetika",
         "#faktaoklimatu"
       ],
-      "status": "approved",
+      "status": "posted",
       "yt_video_id": "WAN_EbfwUjc",
       "yt_prestaged": true,
-      "yt_publish_at": "2026-11-27T18:00:00+00:00"
+      "yt_publish_at": "2026-11-27T18:00:00+00:00",
+      "ig_media_id": "17894656140457604",
+      "ig_collaborators": [
+        "faktaoklimatu"
+      ],
+      "posted_at": "2026-11-27T18:09:15.936695+00:00"
     },
     {
       "id": "114-3-gronsko-vysoka-hora",
